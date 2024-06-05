@@ -1,0 +1,92 @@
+.header {
+    width: 08%;
+}
+
+.navbar a {
+    padding: 1rem;
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+}
+
+.navbar p {
+    display: none;
+}
+
+.logo svg {
+    width: 21px;
+    margin-block: 2rem;
+}
+
+.navbar svg {
+    width: 22px;
+    margin-block: .8rem;
+}
+
+.profile img {
+    width: 22px;
+    border-radius: 20px;
+}
+
+.stories {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: .6rem;
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+.stories img {
+    border: 2px solid #0ae419;
+    display: flex;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post img {
+    width: 40px;
+}
+
+.post-card {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-card img {
+    width: 50%;
+}
+
+@media screen and (min-width:1260px) {
+    .header {
+        width: 13%;
+    }
+
+    .navbar p {
+        display: block;
+    }
+
+    .navbar a {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo p {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .logo svg {
+        display: none;
+    }
+}
