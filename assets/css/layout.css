@@ -2,24 +2,36 @@
     width: 08%;
 }
 
+nav {
+    margin-top: 1.7rem;
+}
+
 .navbar a {
-    padding: 1rem;
+    display: block;
     color: var(--cor-primaria);
     font-family: var(--font-primaria);
+    text-align: center;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: .2s;
 }
 
 .navbar p {
     display: none;
 }
 
-.logo svg {
-    width: 21px;
-    margin-block: 2rem;
+.navbar svg {
+    width: 19px;
 }
 
-.navbar svg {
-    width: 22px;
-    margin-block: .8rem;
+.nav-list {
+    margin-top: 2.5rem;
+}
+
+.nav-list li {
+    margin-top: 1.5rem;
 }
 
 .profile img {
@@ -32,37 +44,61 @@
     justify-content: center;
     text-align: center;
     font-size: .6rem;
-    gap: 1rem;
-    margin-top: 1.4rem;
+    gap: .8rem;
+    padding-top: 1.2rem;
+    margin-bottom: 1.4rem;
+    margin-left: 2rem;
 }
 
 .stories img {
     border: 2px solid #0ae419;
-    display: flex;
-    width: 50px;
     border-radius: 25px;
+    display: flex;
+    width: 45px;
+
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.post img {
-    width: 40px;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
 }
 
 .post-card {
-    margin-top: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    margin-left: 9rem;
+    margin-bottom: .3rem;
+}
+
+.post-card a {
+    font-size: .7rem;
+    color: black;
+    font-family: var(--font-primaria);
+    font-weight: 550;
+}
+
+.post img {
+    width: 55%;
+    border-radius: 3px;
+}
+
+.post-img {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.post-card img {
-    width: 50%;
+.post-logo img {
+    width: 27px;
+    border-radius: 20px;
+    border: 2px solid #0ae419;
+}
+
+.post-verificado {
+    width: 11px !important;
+    height: 11px !important;
 }
 
 @media screen and (min-width:1260px) {
