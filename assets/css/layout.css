@@ -1,104 +1,383 @@
-.header {
-    width: 08%;
+@media screen and (min-width:0px) {
+    header {
+        width: 100%;
+        height: 06vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        display: flex;
+    }
+
+    .navbar .logo p {
+        display: block;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-size: 1.2rem !important;
+    }
+
+    .logo svg {
+        display: none;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 05vh;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        gap: 3rem;
+    }
+
+    .navbar a {
+        display: block;
+        color: var(--cor-primaria);
+        font-family: var(--font-primaria);
+        text-align: center;
+    }
+
+    .nav-list a:hover {
+        transform: scale(1.1);
+        transition: .2s ease-in-out;
+    }
+
+    .navbar svg {
+        width: 19px;
+    }
+
+    .profile img {
+        width: 22px;
+        border-radius: 20px;
+    }
+
+    .nav-list li:nth-child(1) {
+        order: 1;
+    }
+
+    .nav-list li:nth-child(2) {
+        order: 2;
+    }
+
+    .nav-list li:nth-child(3) {
+        order: 6;
+        display: none;
+    }
+
+    .nav-list li:nth-child(4) {
+        order: 4;
+    }
+
+    .nav-list li:nth-child(5) {
+        order: 5;
+        display: none;
+    }
+
+    .nav-list li:nth-child(6) {
+        order: 6;
+        display: none;
+    }
+
+    .nav-list li:nth-child(7) {
+        order: 3;
+    }
+
+    .nav-list li:nth-child(8) {
+        order: 8;
+    }
+
+    .config-list {
+        visibility: hidden;
+    }
+
+    .nav-text1 {
+        display: none;
+    }
+
+
+    /* ============== FIM MENU ==============*/
+
+    .stories {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: .8rem;
+        gap: 1rem;
+        margin-top: 2.8rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .stories img {
+        border: 2px solid #0ae419;
+        border-radius: 50px;
+        display: flex;
+        width: 65px;
+    }
+
+    /* ============== FIM STORIES ==============*/
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        border: 0px solid #030303;
+    }
+
+    .post-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: .3rem;
+        font-family: var(--font-primaria);
+        font-size: .8rem;
+        color: rgb(130, 130, 130);
+        gap: 5px;
+    }
+
+    .post-header a {
+        color: black;
+        font-weight: 550;
+    }
+
+    .post img {
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    .post-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-header img {
+        width: 27px;
+        border-radius: 20px;
+        border: 2px solid #0ae419;
+    }
+
+    .post-verificado {
+        width: 11px !important;
+        height: 11px !important;
+        border: none !important;
+    }
+
+    .post-footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+    .post-footer svg {
+        width: 22px;
+        cursor: pointer;
+    }
+
+    .save {
+        height: 22px;
+        margin-left: auto;
+    }
+
+    .post-comments {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .post-comments input {
+        width: 100%;
+        border: none;
+        margin-bottom: .8rem;
+        font-size: 12px;
+    }
+
+    .post-comments button {
+        border: none;
+        display: none;
+    }
+
+    .post-comments::after {
+        display: block;
+        content: "";
+        background-color: #7e7e7e;
+        height: 1px;
+        width: 100%;
+    }
+
+    /* ============== FIM POST ==============*/
 }
 
-nav {
-    margin-top: 1.7rem;
-}
+@media screen and (min-width:768px) {
+    .header {
+        width: 08%;
+        height: 100vh;
+        justify-content: center;
+    }
 
-.navbar a {
-    display: block;
-    color: var(--cor-primaria);
-    font-family: var(--font-primaria);
-    text-align: center;
-}
+    .navbar {
+        margin-top: 1.7rem;
+        position: fixed;
+        height: 100vh;
+    }
 
-.navbar a:hover {
-    transform: scale(1.1);
-    transition: .2s;
-}
+    .navbar a {
+        display: block;
+        color: var(--cor-primaria);
+        font-family: var(--font-primaria);
+        text-align: center;
+    }
 
-.navbar p {
-    display: none;
-}
+    .navbar .nav-text {
+        visibility: hidden;
+        display: none;
+        width: 120px;
+        text-align: left;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+    }
 
-.navbar svg {
-    width: 19px;
-}
+    .navbar svg {
+        width: 19px;
+    }
 
-.nav-list {
-    margin-top: 2.5rem;
-}
+    .logo svg {
+        display: block;
+        margin: 0 auto;
+    }
 
-.nav-list li {
-    margin-top: 1.5rem;
-}
+    .logo p {
+        display: none !important;
+    }
 
-.profile img {
-    width: 22px;
-    border-radius: 20px;
-}
+    .nav-list {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0rem;
+        position: relative;
+    }
 
-.stories {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: .6rem;
-    gap: .8rem;
-    padding-top: 1.2rem;
-    margin-bottom: 1.4rem;
-    margin-left: 2rem;
-}
+    .nav-list li {
+        margin-block: 1.3rem;
+    }
 
-.stories img {
-    border: 2px solid #0ae419;
-    border-radius: 25px;
-    display: flex;
-    width: 45px;
+    .nav-list li:nth-child(1) {
+        order: 1;
+    }
 
-}
+    .nav-list li:nth-child(2) {
+        order: 2;
+    }
 
-.post {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
-}
+    .nav-list li:nth-child(3) {
+        order: 3;
+        display: block;
+    }
 
-.post-card {
-    display: flex;
-    flex-direction: row;
-    margin-left: 9rem;
-    margin-bottom: .3rem;
-}
+    .nav-list li:nth-child(4) {
+        order: 4;
+    }
 
-.post-card a {
-    font-size: .7rem;
-    color: black;
-    font-family: var(--font-primaria);
-    font-weight: 550;
-}
+    .nav-list li:nth-child(5) {
+        order: 5;
+        display: block;
+    }
 
-.post img {
-    width: 55%;
-    border-radius: 3px;
-}
+    .nav-list li:nth-child(6) {
+        order: 6;
+        display: block;
+    }
 
-.post-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .nav-list li:nth-child(7) {
+        order: 7;
+    }
 
-.post-logo img {
-    width: 27px;
-    border-radius: 20px;
-    border: 2px solid #0ae419;
-}
+    .nav-list li:nth-child(8) {
+        order: 8;
+    }
 
-.post-verificado {
-    width: 11px !important;
-    height: 11px !important;
+    .nav-div {
+        display: flex;
+        position: fixed;
+        bottom: 55px;
+        align-items: center;
+    }
+
+    .nav-div:hover {
+        transform: scale(1.1);
+        transition: .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .btn-menu {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: none;
+    }
+
+    .bar {
+        display: block;
+        width: 16px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: rgb(58, 53, 53);
+    }
+
+    .config-list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 150px;
+        left: 60px;
+        background-color: #fff;
+        border-radius: 20px;
+        gap: 1.3rem;
+        font-size: 12px;
+        padding: 1rem;
+    }
+
+    .config-list a {
+        color: #030303;
+        text-align: left;
+        display: flex;
+        gap: .7rem;
+    }
+
+    .config-list a:hover {
+        transform: scale(1);
+    }
+
+    .config-list.active {
+        visibility: visible;
+    }
+
+    .config-list svg {
+        width: 13px;
+    }
+
+    /* ============== FIM MENU ==============*/
+
+    .stories {
+        font-size: .6rem;
+        gap: .8rem;
+        padding-top: 1.2rem;
+    }
+
+    .stories img {
+        border-radius: 25px;
+        width: 45px;
+    }
+
+    /* ============== FIM STORIES ==============*/
+    .post {
+        margin-inline: 220px;
+    }
+
+    /* ============== FIM POST ==============*/
 }
 
 @media screen and (min-width:1260px) {
@@ -106,23 +385,45 @@ nav {
         width: 13%;
     }
 
-    .navbar p {
+    .navbar .nav-text {
+        visibility: visible;
         display: block;
+        margin-left: 1.7rem;
+        font-size: .8rem;
+    }
+
+    .nav-text1 {
+        display: block;
+        font-size: .8rem;
+        font-family: var(--font-primaria);
+        margin-top: 1.4rem;
     }
 
     .navbar a {
         display: flex;
-        align-items: center;
+    }
+
+    .nav-list {
+        margin-top: 2rem;
+    }
+
+    .nav-list li {
+        margin-block: 0 !important;
+        margin-inline: .6rem;
+        padding: .6rem;
     }
 
     .logo p {
+        display: block !important;
         font-family: "Pacifico", cursive;
         font-weight: 400;
-        font-size: 1.5rem;
-        margin-left: 1rem;
+        font-size: 1.2rem !important;
+        margin-left: 1.1rem;
     }
 
     .logo svg {
         display: none;
     }
+
+    /* ============== FIM MENU ==============*/
 }
