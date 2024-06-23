@@ -5,13 +5,6 @@
     text-decoration: none;
 }
 
-header {
-    left: 0;
-    height: 100vh;
-    border: 1px solid #e1dada;
-    position: fixed;
-}
-
 :root {
     --cor-primaria: #030303;
     --font-primaria: Arial, Helvetica, sans-serif;
