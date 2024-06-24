@@ -5,7 +5,6 @@
         background-color: #fff;
         position: fixed;
         top: 0;
-        display: flex;
     }
 
     .nav-header {
@@ -263,6 +262,7 @@
         height: 100vh;
         justify-content: center;
         border: 1px solid #e1dada;
+        display: flex;
     }
 
     .navbar {
