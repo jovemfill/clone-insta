@@ -39,7 +39,7 @@
 
     .nav-list {
         width: 100%;
-        height: 05vh;
+        height: 06vh;
         background-color: #fff;
         position: fixed;
         bottom: 0;
@@ -62,7 +62,7 @@
     }
 
     .navbar svg {
-        width: 19px;
+        width: 22px;
     }
 
     .profile img {
@@ -122,7 +122,7 @@
         text-align: center;
         font-size: .8rem;
         gap: 1rem;
-        margin-top: 3.8rem;
+        margin-top: 3.3rem;
         margin-bottom: 1.4rem;
     }
 
@@ -173,7 +173,7 @@
     }
 
     .post-header img {
-        width: 27px;
+        width: 30px;
         border-radius: 20px;
         border: 2px solid #0ae419;
     }
@@ -251,8 +251,12 @@
 }
 
 @media screen and (min-width:390px) {
+    header {
+        height: 06vh;
+    }
+
     .stories {
-        margin-top: 4.7rem;
+        margin-top: 4rem;
     }
 }
 
@@ -420,7 +424,7 @@
     .stories {
         font-size: .6rem;
         gap: .8rem;
-
+        margin-top: 1rem;
     }
 
     .stories img {
