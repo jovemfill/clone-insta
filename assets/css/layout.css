@@ -8,6 +8,19 @@
         display: flex;
     }
 
+    .nav-header {
+        display: flex;
+    }
+
+    .nav-header svg {
+        margin-right: 1rem;
+        margin-block: 1rem;
+    }
+
+    .notification {
+        margin-left: auto;
+    }
+
     .navbar .logo p {
         display: block;
         font-family: "Pacifico", cursive;
@@ -286,6 +299,14 @@
 
     .logo p {
         display: none !important;
+    }
+
+    .notification svg {
+        display: none;
+    }
+
+    .direct svg {
+        display: none;
     }
 
     .nav-list {
